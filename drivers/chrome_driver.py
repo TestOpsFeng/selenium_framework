@@ -16,4 +16,4 @@ def init():
     chrome_options.add_argument('--headless')  # 浏览器不提供可视化页面. linux下如果系统不支持可视化不加这条会启动失败
     chrome_options.add_argument('--disable-extensions')
     chrome_options.add_argument('lang=zh_CN.UTF-8')
-    return webdriver.Chrome(executable_path="/usr/bin/chromedriver", chrome_options=chrome_options)
+    return webdriver.Chrome(chrome_options=chrome_options)

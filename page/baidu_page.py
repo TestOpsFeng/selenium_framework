@@ -3,7 +3,7 @@ from page.base_page import BasePage
 
 class BaiduPage(BasePage):
     input_search = (By.XPATH,'//*[@id="kw"]')
-    btn_search = (By.XPATH,'//*[@id="su2"]')
+    btn_search = (By.XPATH,'//*[@id="su"]')
 
 
     def search(self):
