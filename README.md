@@ -35,15 +35,15 @@ pip3 install -r requirements.txt
 ```
 2. 在jenkins上安装allure插件
 3. 在全局工具管理安装Allure Commandline
-4. 新建Project并配置
-    4.1 Source Code Management： 填入github仓库地址以及对应的token
-    4.2 Build： 新增执行Shell： 填入：
-    ```
+4. 新建并配置Project：
+- Source Code Management： 填入github仓库地址以及对应的token
+- Build： 新增执行Shell： 填入：
+```
 cd testcase
 python3 -m pytest test_baidu.py --alluredir=../report/
 exit 0
-    ```
-    4.3 Post-build Actions: Allure Report: Path中填入report
+```
+Post-build Actions: Allure Report: Path中填入report
 5. 构建
 
 ### 报告：
