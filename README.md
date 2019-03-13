@@ -21,6 +21,8 @@ class BaiduPage(BasePage):
 ```
 cd testcase
 pytest test_baidu.py --alluredir=../repor
+# 查看报告
+allure serve ../report
 ```
 
 ### 在Jenkins上运行
