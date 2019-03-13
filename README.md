@@ -45,8 +45,8 @@ cd testcase
 python3 -m pytest test_baidu.py --alluredir=../report/
 exit 0
 ```
-Post-build Actions: Allure Report: Path中填入report
-5. 构建
+- Post-build Actions: Allure Report: Path中填入report
+- 构建
 
 ### 报告：
 ![report](./report.png "optional title")
