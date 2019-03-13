@@ -1,0 +1,2 @@
+driver: "chrome"
+wait_elements_time: 3

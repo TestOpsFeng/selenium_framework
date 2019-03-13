@@ -1,0 +1,4 @@
+PyYAML>=3.12
+pytest>=3.5.1
+pytest-rerunfailures>=4.1
+allure-pytest>=2.6.0
