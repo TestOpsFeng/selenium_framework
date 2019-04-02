@@ -31,8 +31,10 @@ pytest test_register.py
 - Object的方法对应Page的操作、行为
 ```
 # 元素定位
-input_search = (By.XPATH,'//*[@id="kw"]')
-btn_search = (By.XPATH,'//*[@id="su2"]')
+from collections import namedtuple
+Locator = namedtuple('Locator','by loc')
+input_search = Locator(By.XPATH,'//*[@id="kw"]')
+btn_search = Locator(By.XPATH,'//*[@id="su2"]')
 # 对象
 class BaiduPage(BasePage):
     # 操作、行为
@@ -40,14 +42,7 @@ class BaiduPage(BasePage):
         self.send_keys(input_search,"nihao")
         self.click(btn_search)
 ```
-封装元素定位的代码不好理解，可通过具名元组优化：
-```
- from collections import namedtuple
- Locator = namedtuple('Locator','by loc')
- input_search = Locator(By.XPATH,'//*[@id="kw"]')
- btn_search = Locator(By.XPATH,'//*[@id="su2"]')
-```
-####调用
+#### 调用
 ```
  #创建对象
  self.baidu_page = BaiduPage(cls.driver)
