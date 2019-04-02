@@ -1,2 +1,9 @@
 driver: "chrome"
-wait_elements_time: 3
+wait_elements_time: 10
+#host: http://192.168.157.145
+host: http://testops.top:81
+
+#url_regerister: http://192.168.157.145/phpwind/register.php#breadCrumb
+url_regerister: http://testops.top:81/phpwind/register.php#breadCrumb
+
+url_baidu: https://www.baidu.com

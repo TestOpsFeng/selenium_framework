@@ -3,3 +3,5 @@ pytest>=3.5.1
 pytest-rerunfailures>=4.1
 allure-pytest>=2.6.0
 selenium>=3.141.0
+barnum>=0.5.1
+pyautoit>=0.4

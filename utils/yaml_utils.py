@@ -13,7 +13,10 @@ def get(file_name,*keys,file_path=dir):
     return config
 
 if __name__ == '__main__':
-    # driver = get("constant.yaml","drivers",0)
-    # print(driver)
-    a = (1,2)
-    print(type(a))
+    # wait_time = yaml_utils.get("constant.yaml", "wait_elements_time")
+    # driver = get("host","url_regerister")
+    # driver2 = get_url("constant.yaml","host")
+    driver2 = get("constant.yaml","test1","test2","test33")
+    print(driver2)
+    # a = (1,2)
+    # print(type(a))
